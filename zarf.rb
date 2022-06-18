@@ -5,34 +5,34 @@
 class Zarf < Formula
   desc "An airgap delivery tool!"
   homepage "https://zarf.dev/"
-  version "0.19.4"
+  version "0.19.5"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/defenseunicorns/zarf/releases/download/v0.19.4/zarf_v0.19.4_Darwin_amd64"
-      sha256 "a1a68465f0387e8ecb9e0cd253460cbd1d49d75170550a4b296a323f880355a3"
+    if Hardware::CPU.arm?
+      url "https://github.com/defenseunicorns/zarf/releases/download/v0.19.5/zarf_v0.19.5_Darwin_arm64"
+      sha256 "becd2aa97364cbc9945df3a890677b47129f15e56d82b3164b8cf9a8528c5163"
 
       def install
-        bin.install "zarf_v0.19.4_Darwin_amd64" => "zarf"
+        bin.install "zarf_v0.19.5_Darwin_arm64" => "zarf"
       end
     end
-    if Hardware::CPU.arm?
-      url "https://github.com/defenseunicorns/zarf/releases/download/v0.19.4/zarf_v0.19.4_Darwin_arm64"
-      sha256 "26535467e45475f3541328dc27f43135773dd67793c952d1fdcf5fd8d3be6776"
+    if Hardware::CPU.intel?
+      url "https://github.com/defenseunicorns/zarf/releases/download/v0.19.5/zarf_v0.19.5_Darwin_amd64"
+      sha256 "68068bc61705716bcf90f1fd2ef8a6244de3e085d645dd70a10fe0bc837a47dc"
 
       def install
-        bin.install "zarf_v0.19.4_Darwin_arm64" => "zarf"
+        bin.install "zarf_v0.19.5_Darwin_amd64" => "zarf"
       end
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/defenseunicorns/zarf/releases/download/v0.19.4/zarf_v0.19.4_Linux_amd64"
-      sha256 "26d5e1a6b6affadd8cf45e14df44749ce9c61a0b04c4467e4b5ff55605d978fa"
+      url "https://github.com/defenseunicorns/zarf/releases/download/v0.19.5/zarf_v0.19.5_Linux_amd64"
+      sha256 "c008953510899925c1326043ceff7e1d75a1c1b0fac3ad589050363bfb5c92cb"
 
       def install
-        bin.install "zarf_v0.19.4_Linux_amd64" => "zarf"
+        bin.install "zarf_v0.19.5_Linux_amd64" => "zarf"
       end
     end
   end
