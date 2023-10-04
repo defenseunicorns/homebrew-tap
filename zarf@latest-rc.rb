@@ -5,42 +5,42 @@
 class ZarfATlatestRc < Formula
   desc "DevSecOps for Air Gap"
   homepage "https://zarf.dev/"
-  version "0.30.0-rc1"
+  version "0.30.0-rc2"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/defenseunicorns/zarf/releases/download/v0.30.0-rc1/zarf_v0.30.0-rc1_Darwin_amd64"
-      sha256 "157c13fa1fdb567896636d51bf93695607c97e178c9d95122ad3ddff5b48ce22"
+    if Hardware::CPU.arm?
+      url "https://github.com/defenseunicorns/zarf/releases/download/v0.30.0-rc2/zarf_v0.30.0-rc2_Darwin_arm64"
+      sha256 "7492f672c803e1b7880b0ae1e62c922af2bca5a6cf9b7151fe6b7109e81e5b7a"
 
       def install
-        bin.install "zarf_v0.30.0-rc1_Darwin_amd64" => "zarf"
+        bin.install "zarf_v0.30.0-rc2_Darwin_arm64" => "zarf"
       end
     end
-    if Hardware::CPU.arm?
-      url "https://github.com/defenseunicorns/zarf/releases/download/v0.30.0-rc1/zarf_v0.30.0-rc1_Darwin_arm64"
-      sha256 "2d3a1914f221b77224bcb2b3d58d94f15f46abb21dec5549662d0f48c4e43d4a"
+    if Hardware::CPU.intel?
+      url "https://github.com/defenseunicorns/zarf/releases/download/v0.30.0-rc2/zarf_v0.30.0-rc2_Darwin_amd64"
+      sha256 "73b1d4013fd9eb01d2e70a3daa9f475322cc2be41461552d2a14b83db6099996"
 
       def install
-        bin.install "zarf_v0.30.0-rc1_Darwin_arm64" => "zarf"
+        bin.install "zarf_v0.30.0-rc2_Darwin_amd64" => "zarf"
       end
     end
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/defenseunicorns/zarf/releases/download/v0.30.0-rc1/zarf_v0.30.0-rc1_Linux_arm64"
-      sha256 "b1e0e9322662323d0d75828a0c71472f63670aac6f581e1ae334ff255f331d16"
+    if Hardware::CPU.intel?
+      url "https://github.com/defenseunicorns/zarf/releases/download/v0.30.0-rc2/zarf_v0.30.0-rc2_Linux_amd64"
+      sha256 "2224fb86c83a08b9299e9dfcdf2d453ec3c1483bc2381a13a2337c164d6a5769"
 
       def install
-        bin.install "zarf_v0.30.0-rc1_Linux_arm64" => "zarf"
+        bin.install "zarf_v0.30.0-rc2_Linux_amd64" => "zarf"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/defenseunicorns/zarf/releases/download/v0.30.0-rc1/zarf_v0.30.0-rc1_Linux_amd64"
-      sha256 "3d35bec17e189a988f8b9b323ebbb69751264d381ad26fdde3783b174b48c3e8"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/defenseunicorns/zarf/releases/download/v0.30.0-rc2/zarf_v0.30.0-rc2_Linux_arm64"
+      sha256 "fbeb6ba2da581dc6e8dc4e27fc94ef7ebfd1aa22026dfea0395f52cd8443a008"
 
       def install
-        bin.install "zarf_v0.30.0-rc1_Linux_amd64" => "zarf"
+        bin.install "zarf_v0.30.0-rc2_Linux_arm64" => "zarf"
       end
     end
   end
