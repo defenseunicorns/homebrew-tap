@@ -10,7 +10,7 @@ class Uds < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/defenseunicorns/uds-cli/releases/download/v0.0.7-alpha/uds-cli_v0.0.7-alpha_Darwin_arm64"
-      sha256 "b02d7b401fefa2f64cd8a44e74a936f122da0371f7646558da7a52c5dd856cf1"
+      sha256 "33cf56a0446a2d25924dd96290bbcbe4bd0bfc8bca217d642b46a71186b27ba5"
 
       def install
         bin.install "uds-cli_v0.0.7-alpha_Darwin_arm64" => "uds-cli"
@@ -18,7 +18,7 @@ class Uds < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/defenseunicorns/uds-cli/releases/download/v0.0.7-alpha/uds-cli_v0.0.7-alpha_Darwin_amd64"
-      sha256 "fad2f8a3e67c6cd428a3d4e91700d19352a7fab3840e5c335dad813485e5c6a6"
+      sha256 "cde3c184430e258ce3b8415e485a78745d2a6ccc9e06f97130386e11c267fb4a"
 
       def install
         bin.install "uds-cli_v0.0.7-alpha_Darwin_amd64" => "uds-cli"
@@ -27,20 +27,20 @@ class Uds < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/defenseunicorns/uds-cli/releases/download/v0.0.7-alpha/uds-cli_v0.0.7-alpha_Linux_arm64"
-      sha256 "6d715b78c6d5fa0b0ea980852d2ec53e4d931b0eb064aab7846d26ef87962a84"
-
-      def install
-        bin.install "uds-cli_v0.0.7-alpha_Linux_arm64" => "uds-cli"
-      end
-    end
     if Hardware::CPU.intel?
       url "https://github.com/defenseunicorns/uds-cli/releases/download/v0.0.7-alpha/uds-cli_v0.0.7-alpha_Linux_amd64"
-      sha256 "c014fa0595399d008ebcf49adc1322c3cc86dcdd4676724149a855f3496043d0"
+      sha256 "72fd1e18ae63c9ec4fd69dcdaf0adc771dc8074d0df41e5c00d9f179d697e365"
 
       def install
         bin.install "uds-cli_v0.0.7-alpha_Linux_amd64" => "uds-cli"
+      end
+    end
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/defenseunicorns/uds-cli/releases/download/v0.0.7-alpha/uds-cli_v0.0.7-alpha_Linux_arm64"
+      sha256 "0a10d894aa95dea784f56b9c9bb69bc104bf2e4e6ac28297306a534f61ba9a12"
+
+      def install
+        bin.install "uds-cli_v0.0.7-alpha_Linux_arm64" => "uds-cli"
       end
     end
   end
