@@ -10,7 +10,7 @@ class UdsAT007Alpha < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/defenseunicorns/uds-cli/releases/download/v0.0.7-alpha/uds-cli_v0.0.7-alpha_Darwin_amd64"
-      sha256 "baaee32c9ba2216293af5ebf7f8b97a849737b70873c7b3c6a9fb4d80ff1d5ca"
+      sha256 "d216649583c15a2852c2691b88916a9dee30fe0f686d69bb0dc4bca0705cef37"
 
       def install
         bin.install "uds-cli_v0.0.7-alpha_Darwin_amd64" => "uds"
@@ -18,7 +18,7 @@ class UdsAT007Alpha < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/defenseunicorns/uds-cli/releases/download/v0.0.7-alpha/uds-cli_v0.0.7-alpha_Darwin_arm64"
-      sha256 "06fea5f7654dc310aeb4f05525a155e36349fb3af0e214fa7f5afed3175b5d32"
+      sha256 "89a53a0e96b9a5ef2e621b248925b22e9c3d1f13aa0e2eb745440d194680543b"
 
       def install
         bin.install "uds-cli_v0.0.7-alpha_Darwin_arm64" => "uds"
@@ -27,20 +27,20 @@ class UdsAT007Alpha < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/defenseunicorns/uds-cli/releases/download/v0.0.7-alpha/uds-cli_v0.0.7-alpha_Linux_arm64"
-      sha256 "14ccb7cb53e114415d271f2d61f889b462f5a18f645e54757247c7c98d2b072c"
-
-      def install
-        bin.install "uds-cli_v0.0.7-alpha_Linux_arm64" => "uds"
-      end
-    end
     if Hardware::CPU.intel?
       url "https://github.com/defenseunicorns/uds-cli/releases/download/v0.0.7-alpha/uds-cli_v0.0.7-alpha_Linux_amd64"
-      sha256 "d2b846edb66b2fabb523d0e457767214b359b6b73e7eb1d2539f39c784352c5c"
+      sha256 "ab23075364c5ca5494da444ddab9b1285c1ad54ef8c3137861974fae598be153"
 
       def install
         bin.install "uds-cli_v0.0.7-alpha_Linux_amd64" => "uds"
+      end
+    end
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/defenseunicorns/uds-cli/releases/download/v0.0.7-alpha/uds-cli_v0.0.7-alpha_Linux_arm64"
+      sha256 "17dae467f6aa8bf3621ce4e591594348a436cbc1d899e353ba1661e469fe27fd"
+
+      def install
+        bin.install "uds-cli_v0.0.7-alpha_Linux_arm64" => "uds"
       end
     end
   end
