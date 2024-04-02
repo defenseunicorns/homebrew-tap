@@ -5,42 +5,42 @@
 class Uds < Formula
   desc "CLI for Unicorn Delivery Service"
   homepage "https://github.com/defenseunicorns/uds-cli"
-  version "0.10.2"
+  version "0.10.3"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/defenseunicorns/uds-cli/releases/download/v0.10.2/uds-cli_v0.10.2_Darwin_arm64"
-      sha256 "489b581e5649561eb2c53f358c50a268a1b5a0d3c99e23dfb39fcffcbb105dbf"
+      url "https://github.com/defenseunicorns/uds-cli/releases/download/v0.10.3/uds-cli_v0.10.3_Darwin_arm64"
+      sha256 "6fa9fea4f54ef4367df4dba1c0f1c54e447f13d7764d5208dd7f74724883f19b"
 
       def install
-        bin.install "uds-cli_v0.10.2_Darwin_arm64" => "uds"
+        bin.install "uds-cli_v0.10.3_Darwin_arm64" => "uds"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/defenseunicorns/uds-cli/releases/download/v0.10.2/uds-cli_v0.10.2_Darwin_amd64"
-      sha256 "8ca3996c82d649903197b778d4dbef8948f26c6ef7e7b8bfbe88bc79fefef932"
+      url "https://github.com/defenseunicorns/uds-cli/releases/download/v0.10.3/uds-cli_v0.10.3_Darwin_amd64"
+      sha256 "984a811ba71bce4d9725905f09934792335ff55743be3390f204edcbfc299648"
 
       def install
-        bin.install "uds-cli_v0.10.2_Darwin_amd64" => "uds"
+        bin.install "uds-cli_v0.10.3_Darwin_amd64" => "uds"
       end
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/defenseunicorns/uds-cli/releases/download/v0.10.2/uds-cli_v0.10.2_Linux_amd64"
-      sha256 "b2dedabc5ea2ae1500a976f9038e766a135359328e2f21890b62fefda21d10f1"
+      url "https://github.com/defenseunicorns/uds-cli/releases/download/v0.10.3/uds-cli_v0.10.3_Linux_amd64"
+      sha256 "2b70431c1be1a652e8ff3d7e6a70b11a5351e97a143cd457638491e019528a2e"
 
       def install
-        bin.install "uds-cli_v0.10.2_Linux_amd64" => "uds"
+        bin.install "uds-cli_v0.10.3_Linux_amd64" => "uds"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/defenseunicorns/uds-cli/releases/download/v0.10.2/uds-cli_v0.10.2_Linux_arm64"
-      sha256 "cb27c9bd317581be688fd996d14fb642ebfd30384fd0e9b6974d99f5e4920dae"
+      url "https://github.com/defenseunicorns/uds-cli/releases/download/v0.10.3/uds-cli_v0.10.3_Linux_arm64"
+      sha256 "48b3ba9e4c258578423c9ff3dd7501dc950624415fd7cbb6e214b1785240a12b"
 
       def install
-        bin.install "uds-cli_v0.10.2_Linux_arm64" => "uds"
+        bin.install "uds-cli_v0.10.3_Linux_arm64" => "uds"
       end
     end
   end
