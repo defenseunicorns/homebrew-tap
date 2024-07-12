@@ -1,0 +1,9 @@
+/* @defenseunicorns/tech-leads
+
+/uds* @defenseunicorns/uds-platform-leads
+/zarf* @defenseunicorns/zarf-admin
+/maru* @defenseunicorns/swf-leads
+
+# Additional privileged files
+/CODEOWNERS @jeff-mccoy @austenbryan
+/LICENSE @jeff-mccoy @austenbryan
