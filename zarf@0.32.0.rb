@@ -9,7 +9,7 @@ class ZarfAT0320 < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/defenseunicorns/zarf/releases/download/v0.32.0/zarf_v0.32.0_Darwin_arm64"
+      url "https://github.com/zarf-dev/zarf/releases/download/v0.32.0/zarf_v0.32.0_Darwin_arm64"
       sha256 "301765fc62b28d75c24c08a0074ad56395c25a09f37b957a5708181759014c97"
 
       def install
@@ -17,7 +17,7 @@ class ZarfAT0320 < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/defenseunicorns/zarf/releases/download/v0.32.0/zarf_v0.32.0_Darwin_amd64"
+      url "https://github.com/zarf-dev/zarf/releases/download/v0.32.0/zarf_v0.32.0_Darwin_amd64"
       sha256 "0bf7252c15a14d4f0eecf272f56c4e0e61dae4f372d75604ae25b841e0bec7fc"
 
       def install
@@ -28,7 +28,7 @@ class ZarfAT0320 < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/defenseunicorns/zarf/releases/download/v0.32.0/zarf_v0.32.0_Linux_amd64"
+      url "https://github.com/zarf-dev/zarf/releases/download/v0.32.0/zarf_v0.32.0_Linux_amd64"
       sha256 "ae913af3cf83a35b014fa47911a872124edc291e95a61bd509f143d95ec9d5ab"
 
       def install
@@ -36,7 +36,7 @@ class ZarfAT0320 < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/defenseunicorns/zarf/releases/download/v0.32.0/zarf_v0.32.0_Linux_arm64"
+      url "https://github.com/zarf-dev/zarf/releases/download/v0.32.0/zarf_v0.32.0_Linux_arm64"
       sha256 "a213695b7a58482affab4136560d976f308f25585a5218ecb5cedb28050f639a"
 
       def install

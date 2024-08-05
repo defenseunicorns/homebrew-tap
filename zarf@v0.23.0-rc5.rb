@@ -9,7 +9,7 @@ class ZarfATv0230Rc5 < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/defenseunicorns/zarf/releases/download/v0.23.0-rc5/zarf_v0.23.0-rc5_Darwin_arm64"
+      url "https://github.com/zarf-dev/zarf/releases/download/v0.23.0-rc5/zarf_v0.23.0-rc5_Darwin_arm64"
       sha256 "0cc3fb258315a7ae476e60cbb4447b341e07d0a00b95fb0265a9ea01c9998ede"
 
       def install
@@ -17,7 +17,7 @@ class ZarfATv0230Rc5 < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/defenseunicorns/zarf/releases/download/v0.23.0-rc5/zarf_v0.23.0-rc5_Darwin_amd64"
+      url "https://github.com/zarf-dev/zarf/releases/download/v0.23.0-rc5/zarf_v0.23.0-rc5_Darwin_amd64"
       sha256 "833ee62fdc3fb336a77e344bebc3685c1ebca7237ed97057df0bf20ef46d61c8"
 
       def install
@@ -28,7 +28,7 @@ class ZarfATv0230Rc5 < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/defenseunicorns/zarf/releases/download/v0.23.0-rc5/zarf_v0.23.0-rc5_Linux_amd64"
+      url "https://github.com/zarf-dev/zarf/releases/download/v0.23.0-rc5/zarf_v0.23.0-rc5_Linux_amd64"
       sha256 "c253fd03841826554a4a2cd3232ae78ba7341fbb86e49dbbe1e0fa609deda3e6"
 
       def install
@@ -36,7 +36,7 @@ class ZarfATv0230Rc5 < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/defenseunicorns/zarf/releases/download/v0.23.0-rc5/zarf_v0.23.0-rc5_Linux_arm64"
+      url "https://github.com/zarf-dev/zarf/releases/download/v0.23.0-rc5/zarf_v0.23.0-rc5_Linux_arm64"
       sha256 "fdc22c88fea45f42116b102d5059cd854cb33e6df0570570241d9cb47da1e369"
 
       def install
