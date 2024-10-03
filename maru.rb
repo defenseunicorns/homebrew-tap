@@ -5,23 +5,23 @@
 class Maru < Formula
   desc "The Unicorn Task Runner"
   homepage "https://github.com/defenseunicorns/maru-runner"
-  version "0.2.3"
+  version "0.3.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/defenseunicorns/maru-runner/releases/download/v0.2.3/maru-runner_v0.2.3_Darwin_amd64"
-      sha256 "78fc78d825b75454a32739ce58d0888981909818727d76648f5acea630a4245b"
+      url "https://github.com/defenseunicorns/maru-runner/releases/download/v0.3.0/maru-runner_v0.3.0_Darwin_amd64"
+      sha256 "046bfd24d549c9bdfe6900b22da59341554f8675ffd0c6edb947e2c6ccfe5cee"
 
       def install
-        bin.install "maru-runner_v0.2.3_Darwin_amd64" => "maru"
+        bin.install "maru-runner_v0.3.0_Darwin_amd64" => "maru"
       end
     end
     on_arm do
-      url "https://github.com/defenseunicorns/maru-runner/releases/download/v0.2.3/maru-runner_v0.2.3_Darwin_arm64"
-      sha256 "0c71e1c8b847dfe26ab31c1dd0a32cb3a93d9c5b0c66c147589260e5b85fbe21"
+      url "https://github.com/defenseunicorns/maru-runner/releases/download/v0.3.0/maru-runner_v0.3.0_Darwin_arm64"
+      sha256 "63c86638b807bc0bf3dd6d8079c7c592b90734f48d63f49f7a40929c071226eb"
 
       def install
-        bin.install "maru-runner_v0.2.3_Darwin_arm64" => "maru"
+        bin.install "maru-runner_v0.3.0_Darwin_arm64" => "maru"
       end
     end
   end
@@ -29,21 +29,21 @@ class Maru < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/defenseunicorns/maru-runner/releases/download/v0.2.3/maru-runner_v0.2.3_Linux_amd64"
-        sha256 "215800eac85ef42b8f6bdf7e5a827c5f929aec4857e9eb2a1d152a319e4d7f41"
+        url "https://github.com/defenseunicorns/maru-runner/releases/download/v0.3.0/maru-runner_v0.3.0_Linux_amd64"
+        sha256 "de9e77471c017f34d940b4520c4bd90cd2ffd64b185fb61fc4b3a244c5db9a50"
 
         def install
-          bin.install "maru-runner_v0.2.3_Linux_amd64" => "maru"
+          bin.install "maru-runner_v0.3.0_Linux_amd64" => "maru"
         end
       end
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/defenseunicorns/maru-runner/releases/download/v0.2.3/maru-runner_v0.2.3_Linux_arm64"
-        sha256 "e33f59ff3e823fc2d606d2a596ee9f69023edc636fd936854b91a755fae768c7"
+        url "https://github.com/defenseunicorns/maru-runner/releases/download/v0.3.0/maru-runner_v0.3.0_Linux_arm64"
+        sha256 "86d66214929a4577571a7be469b3adfb663697ec7451762fbe5b87b1bf9be678"
 
         def install
-          bin.install "maru-runner_v0.2.3_Linux_arm64" => "maru"
+          bin.install "maru-runner_v0.3.0_Linux_arm64" => "maru"
         end
       end
     end
