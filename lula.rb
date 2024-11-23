@@ -5,23 +5,23 @@
 class Lula < Formula
   desc "The Compliance Validator"
   homepage "https://lula.dev"
-  version "0.11.0"
+  version "0.12.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/defenseunicorns/lula/releases/download/v0.11.0/lula_v0.11.0_Darwin_amd64"
-      sha256 "3a93faa67c0fb10b19407be246880bb0b51e63517d9440b483765a2081e186cc"
+      url "https://github.com/defenseunicorns/lula/releases/download/v0.12.0/lula_v0.12.0_Darwin_amd64"
+      sha256 "fee28e416eed518ec0922bc32eaa95274b465f48ef7ecc0cfe462468e4c2b7ed"
 
       def install
-        bin.install "lula_v0.11.0_Darwin_amd64" => "lula"
+        bin.install "lula_v0.12.0_Darwin_amd64" => "lula"
       end
     end
     on_arm do
-      url "https://github.com/defenseunicorns/lula/releases/download/v0.11.0/lula_v0.11.0_Darwin_arm64"
-      sha256 "e91ced2bd8344865b655916dc17efd690fdfee3a7d10a2ec8b95522edd7cba9e"
+      url "https://github.com/defenseunicorns/lula/releases/download/v0.12.0/lula_v0.12.0_Darwin_arm64"
+      sha256 "458ca5b66dda1037b7e46067c6757c1eaa40ed3455a67911514da7239bd09e47"
 
       def install
-        bin.install "lula_v0.11.0_Darwin_arm64" => "lula"
+        bin.install "lula_v0.12.0_Darwin_arm64" => "lula"
       end
     end
   end
@@ -29,21 +29,21 @@ class Lula < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/defenseunicorns/lula/releases/download/v0.11.0/lula_v0.11.0_Linux_amd64"
-        sha256 "3411a7a082a43c43147ebee5cc6ec52e5668ca968da619be917a6248fafbe350"
+        url "https://github.com/defenseunicorns/lula/releases/download/v0.12.0/lula_v0.12.0_Linux_amd64"
+        sha256 "414f2649c1bca32be62de251160ebfddf3786d821f96206114a6c30c3d0d8844"
 
         def install
-          bin.install "lula_v0.11.0_Linux_amd64" => "lula"
+          bin.install "lula_v0.12.0_Linux_amd64" => "lula"
         end
       end
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/defenseunicorns/lula/releases/download/v0.11.0/lula_v0.11.0_Linux_arm64"
-        sha256 "b085d9ed32e2b49cd90933c1885691364ee2b891bf4c90d4cfc9a2f894378bfd"
+        url "https://github.com/defenseunicorns/lula/releases/download/v0.12.0/lula_v0.12.0_Linux_arm64"
+        sha256 "af90151f9dc349da95a2050b5f7a1aa7a3c05bb7cfc9dc80ddbc55430803ba5b"
 
         def install
-          bin.install "lula_v0.11.0_Linux_arm64" => "lula"
+          bin.install "lula_v0.12.0_Linux_arm64" => "lula"
         end
       end
     end
