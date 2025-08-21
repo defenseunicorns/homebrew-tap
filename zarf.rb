@@ -10,7 +10,7 @@ class Zarf < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/zarf-dev/zarf/releases/download/v0.61.0/zarf_v0.61.0_Darwin_amd64"
-      sha256 "2dda7397af92d17e3e35b6a82078039ae512374ac41ee09ef26587c9cf0792d0"
+      sha256 "0d838b7bfb2ba61158eef437423b7690f3be59c3487426aa2b7f527d794d8647"
 
       def install
         bin.install "zarf_v0.61.0_Darwin_amd64" => "zarf"
@@ -18,7 +18,7 @@ class Zarf < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/zarf-dev/zarf/releases/download/v0.61.0/zarf_v0.61.0_Darwin_arm64"
-      sha256 "5ff7587a84a986e568f98b66bf0d5f5189f9a8da56498c82b85f87b0ba006d86"
+      sha256 "203837bc44d676634ebbe7b49c1ec39663f877c6e0eb6c5c8e8c6661541bab58"
 
       def install
         bin.install "zarf_v0.61.0_Darwin_arm64" => "zarf"
@@ -29,14 +29,14 @@ class Zarf < Formula
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
       url "https://github.com/zarf-dev/zarf/releases/download/v0.61.0/zarf_v0.61.0_Linux_amd64"
-      sha256 "11c1c84522ae181e1e3681b15e173db80142083138e6beaa69fe0114479bcf00"
+      sha256 "068ef90d41cf03e2e267677b615bf72c21d3c4184eff0d35d873b8d3723f4b57"
       def install
         bin.install "zarf_v0.61.0_Linux_amd64" => "zarf"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
       url "https://github.com/zarf-dev/zarf/releases/download/v0.61.0/zarf_v0.61.0_Linux_arm64"
-      sha256 "ba5e653e96b1fde2ff732ca6d199d75e78f81ddb6a00e9d0dd599315e1d0f473"
+      sha256 "2255f17f239db27fc3a87364ff2d4a4b9988547c9aa1e47a44a3d1030f44856a"
       def install
         bin.install "zarf_v0.61.0_Linux_arm64" => "zarf"
       end
