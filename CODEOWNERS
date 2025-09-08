@@ -1,9 +1,9 @@
-/* @defenseunicorns/tech-leads
+/* @defenseunicorns/homebrew-tap
 
-/uds* @defenseunicorns/uds-platform-leads
+/uds* @defenseunicorns/uds-cli
 /zarf* @defenseunicorns/zarf-admin
-/maru* @defenseunicorns/swf-leads
+/maru* @defenseunicorns/uds-cli
 
 # Additional privileged files
-/CODEOWNERS @jeff-mccoy @austenbryan
+/CODEOWNERS @jeff-mccoy @daveworth
 /LICENSE @jeff-mccoy @austenbryan
