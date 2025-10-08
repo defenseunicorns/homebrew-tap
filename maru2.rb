@@ -5,12 +5,12 @@
 class Maru2 < Formula
   desc "A simple task runner"
   homepage "https://github.com/defenseunicorns/maru2"
-  version "0.8.0"
+  version "0.8.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/defenseunicorns/maru2/releases/download/v0.8.0/maru2_Darwin_x86_64.tar.gz"
-      sha256 "9f54941465333afd10970e316ce99aa33036803891dcd4d80b6ceab1ed5e70dc"
+      url "https://github.com/defenseunicorns/maru2/releases/download/v0.8.1/maru2_Darwin_x86_64.tar.gz"
+      sha256 "d5499cdf764d8a01cd937230fc8390f647c22826f5507c7c58cfb3c2b5902a5f"
 
       def install
         bin.install "maru2"
@@ -18,8 +18,8 @@ class Maru2 < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/defenseunicorns/maru2/releases/download/v0.8.0/maru2_Darwin_arm64.tar.gz"
-      sha256 "81b956de0be057277a1cb162ec95475adf62dc03d1f3922c818358f880529ce5"
+      url "https://github.com/defenseunicorns/maru2/releases/download/v0.8.1/maru2_Darwin_arm64.tar.gz"
+      sha256 "0e3cf5ba5baf9d9424f35460b9f38a4d77381d67742bcc0f8af41c06e46783bb"
 
       def install
         bin.install "maru2"
@@ -30,16 +30,16 @@ class Maru2 < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/defenseunicorns/maru2/releases/download/v0.8.0/maru2_Linux_x86_64.tar.gz"
-      sha256 "cf5e4af8ce8e4c0af64a7eb4927d0bb87fa94b161f584cf9818636815681fad8"
+      url "https://github.com/defenseunicorns/maru2/releases/download/v0.8.1/maru2_Linux_x86_64.tar.gz"
+      sha256 "09b741d3ce317bd327b0c69074e2f739f5dee36abdd73e592039ee8b9df4c4fa"
       def install
         bin.install "maru2"
         bin.install "maru2-publish"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/defenseunicorns/maru2/releases/download/v0.8.0/maru2_Linux_arm64.tar.gz"
-      sha256 "9f18b0188ab1885e69154c91db975aeafe4d192c305f257dc347df4cc3d367d7"
+      url "https://github.com/defenseunicorns/maru2/releases/download/v0.8.1/maru2_Linux_arm64.tar.gz"
+      sha256 "4ab45a32d4b74ce152e2f43929ddad954737273d7c559eab4116f2df9255df34"
       def install
         bin.install "maru2"
         bin.install "maru2-publish"
