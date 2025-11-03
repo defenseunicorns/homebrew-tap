@@ -10,7 +10,7 @@ class UdsAT02717 < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/defenseunicorns/uds-cli/releases/download/v0.27.17/uds-cli_v0.27.17_Darwin_amd64"
-      sha256 "1ca78adfa7bbf258468faf608e14699db160b10d7788d3492398245c39794d04"
+      sha256 "367735cc6cc5c91004a9ce6db264e428ccbdfd8ce6ecda92f78c7a45228806f2"
 
       def install
         bin.install "uds-cli_v0.27.17_Darwin_amd64" => "uds"
@@ -18,7 +18,7 @@ class UdsAT02717 < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/defenseunicorns/uds-cli/releases/download/v0.27.17/uds-cli_v0.27.17_Darwin_arm64"
-      sha256 "ba89e714375bbb08a58d742e320c08c128bd3d1c69fbaa4e1626bb6721016788"
+      sha256 "9fd64ebb5696841e0c144414ba5ddfcb6cf9d03def40f74885f744fa78a83ac8"
 
       def install
         bin.install "uds-cli_v0.27.17_Darwin_arm64" => "uds"
@@ -29,14 +29,14 @@ class UdsAT02717 < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/defenseunicorns/uds-cli/releases/download/v0.27.17/uds-cli_v0.27.17_Linux_amd64"
-      sha256 "19bf73f40b49358f8f3adbdc2587a214c13e9011d95bbec61e91d4615dd79123"
+      sha256 "f15b600e2befd8f30eddcc795cc63e6a9b0ae137817cf354352a8251d935c2a2"
       def install
         bin.install "uds-cli_v0.27.17_Linux_amd64" => "uds"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/defenseunicorns/uds-cli/releases/download/v0.27.17/uds-cli_v0.27.17_Linux_arm64"
-      sha256 "f3dac5649981af2aee6d770b1f567fa71d814197e95ae3babb4239de4103a0bf"
+      sha256 "c8952c9bf54296e313da2533cb19d3c867a312c149a18f85d33a53ef985df1ad"
       def install
         bin.install "uds-cli_v0.27.17_Linux_arm64" => "uds"
       end
