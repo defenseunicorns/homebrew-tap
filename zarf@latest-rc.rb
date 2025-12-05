@@ -5,40 +5,40 @@
 class Zarf@latestRc < Formula
   desc "The Airgap Native Packager Manager for Kubernetes"
   homepage "https://zarf.dev/"
-  version "0.65.0-rc1"
+  version "0.67.0-rc1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/zarf-dev/zarf/releases/download/v0.65.0-rc1/zarf_v0.65.0-rc1_Darwin_amd64"
-      sha256 "8ddadc088b8106dc5315c931aa297eac9aa38e33ab4f26a234893356324db925"
+      url "https://github.com/zarf-dev/zarf/releases/download/v0.67.0-rc1/zarf_v0.67.0-rc1_Darwin_amd64"
+      sha256 "ca8095eeec62f4c9d4264979a46a36033d456ead32c97f0e18b0b8524fdd369b"
 
       def install
-        bin.install "zarf_v0.65.0-rc1_Darwin_amd64" => "zarf"
+        bin.install "zarf_v0.67.0-rc1_Darwin_amd64" => "zarf"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/zarf-dev/zarf/releases/download/v0.65.0-rc1/zarf_v0.65.0-rc1_Darwin_arm64"
-      sha256 "a70a7732492d6593af5503bfc541249405d334d3c23f3926b0dc22ba1fdcaa0f"
+      url "https://github.com/zarf-dev/zarf/releases/download/v0.67.0-rc1/zarf_v0.67.0-rc1_Darwin_arm64"
+      sha256 "fa5ed631c4e36e92358cd43f38e97a5d80409ee5634cd6621d6ba9c9032a8b6f"
 
       def install
-        bin.install "zarf_v0.65.0-rc1_Darwin_arm64" => "zarf"
+        bin.install "zarf_v0.67.0-rc1_Darwin_arm64" => "zarf"
       end
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/zarf-dev/zarf/releases/download/v0.65.0-rc1/zarf_v0.65.0-rc1_Linux_amd64"
-      sha256 "813a0685f0fa55aced3f5dd7b0903124cd8df7b37235ab9cdfd856f1df83b589"
+      url "https://github.com/zarf-dev/zarf/releases/download/v0.67.0-rc1/zarf_v0.67.0-rc1_Linux_amd64"
+      sha256 "7bc6bfd2910a04f12391dbf10cc597f8f556363561d051be2cfb9c33d74e8967"
       def install
-        bin.install "zarf_v0.65.0-rc1_Linux_amd64" => "zarf"
+        bin.install "zarf_v0.67.0-rc1_Linux_amd64" => "zarf"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/zarf-dev/zarf/releases/download/v0.65.0-rc1/zarf_v0.65.0-rc1_Linux_arm64"
-      sha256 "5f7ded90b5931d70a47651a6e9e5b4b130e18dcb20f94e4455fb42a1cf6090b7"
+      url "https://github.com/zarf-dev/zarf/releases/download/v0.67.0-rc1/zarf_v0.67.0-rc1_Linux_arm64"
+      sha256 "959becd57132cb2a6a9a596b984c4b596ad647dcd1bdc24ef1e759b0a695c294"
       def install
-        bin.install "zarf_v0.65.0-rc1_Linux_arm64" => "zarf"
+        bin.install "zarf_v0.67.0-rc1_Linux_arm64" => "zarf"
       end
     end
   end
