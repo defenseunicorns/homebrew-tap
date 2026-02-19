@@ -5,40 +5,40 @@
 class Zarf@latestRc < Formula
   desc "The Airgap Native Packager Manager for Kubernetes"
   homepage "https://zarf.dev/"
-  version "0.72.0-rc1-helm-4"
+  version "0.72.0-rc1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/zarf-dev/zarf/releases/download/v0.72.0-rc1-helm-4/zarf_v0.72.0-rc1-helm-4_Darwin_amd64"
-      sha256 "ea2a538fff64e1a8a77259ceb4ec3295d976a2ef9cb7d88f86066641d0ff0847"
+      url "https://github.com/zarf-dev/zarf/releases/download/v0.72.0-rc1/zarf_v0.72.0-rc1_Darwin_amd64"
+      sha256 "27cf5623dacdae90f703547fcbdf01f173f74c80746d9b5196a0bc3157391dc8"
 
       def install
-        bin.install "zarf_v0.72.0-rc1-helm-4_Darwin_amd64" => "zarf"
+        bin.install "zarf_v0.72.0-rc1_Darwin_amd64" => "zarf"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/zarf-dev/zarf/releases/download/v0.72.0-rc1-helm-4/zarf_v0.72.0-rc1-helm-4_Darwin_arm64"
-      sha256 "f84c8bbacfa57226ec693f5622d83f0ac8872732a242aed83487859d857813de"
+      url "https://github.com/zarf-dev/zarf/releases/download/v0.72.0-rc1/zarf_v0.72.0-rc1_Darwin_arm64"
+      sha256 "7d06088301656a6ff03bcf814d9a6d4676762357d683a69957a48f5c8d5af2ce"
 
       def install
-        bin.install "zarf_v0.72.0-rc1-helm-4_Darwin_arm64" => "zarf"
+        bin.install "zarf_v0.72.0-rc1_Darwin_arm64" => "zarf"
       end
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/zarf-dev/zarf/releases/download/v0.72.0-rc1-helm-4/zarf_v0.72.0-rc1-helm-4_Linux_amd64"
-      sha256 "d32f22d727ce2cb95c1b97dc201ccb811e2bf9f2b3ac3731f32b2c2d598bed7e"
+      url "https://github.com/zarf-dev/zarf/releases/download/v0.72.0-rc1/zarf_v0.72.0-rc1_Linux_amd64"
+      sha256 "58d3f9b8b043c78db9d309ad2062114a22cb8127375c4ed02077397dc42363d2"
       def install
-        bin.install "zarf_v0.72.0-rc1-helm-4_Linux_amd64" => "zarf"
+        bin.install "zarf_v0.72.0-rc1_Linux_amd64" => "zarf"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/zarf-dev/zarf/releases/download/v0.72.0-rc1-helm-4/zarf_v0.72.0-rc1-helm-4_Linux_arm64"
-      sha256 "3a28fe8e5bb9d00d110ce0dfd0423aa42f04f3e38edc6240557a5c561076574b"
+      url "https://github.com/zarf-dev/zarf/releases/download/v0.72.0-rc1/zarf_v0.72.0-rc1_Linux_arm64"
+      sha256 "bd7a3fd475fba4cad3fca8f9ec9cca5531f30837f6a82bf33f1454559d8ef135"
       def install
-        bin.install "zarf_v0.72.0-rc1-helm-4_Linux_arm64" => "zarf"
+        bin.install "zarf_v0.72.0-rc1_Linux_arm64" => "zarf"
       end
     end
   end
