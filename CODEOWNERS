@@ -1,8 +1,8 @@
 /* @defenseunicorns/homebrew-tap
 
-/uds* @defenseunicorns/uds-cli
+/uds* @defenseunicorns/uds-foundation
 /zarf* @defenseunicorns/zarf-admin
-/maru* @defenseunicorns/uds-cli
+/maru* @defenseunicorns/uds-foundation
 
 # Additional privileged files
 /CODEOWNERS @jeff-mccoy @daveworth
