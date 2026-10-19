@@ -9,6 +9,9 @@ brew tap defenseunicorns/tap
 ```
 
 ### Install [Zarf](https://zarf.dev)
+
+Zarf Formulae have moved to the [official Zarf tap](https://github.com/zarf-dev/homebrew-tap):
+
 ```bash
-brew install zarf
+brew install zarf-dev/tap/zarf
 ```
